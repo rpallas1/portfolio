@@ -1,0 +1,305 @@
+/* ------- START CSS Reset ------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------- END CSS Reset ------- */
+
+
+/* ------- Variables ------- */
+:root {
+	--dark-text-color: ;
+	--light-text-color: ;
+	--primary-color: ;
+	--secondary-color: ;
+}
+
+
+/* ------- Home Page ------- */
+body {
+	margin: 0 auto;
+	display: grid;
+	grid-template-rows: 50px 1fr;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-items: center;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ----- Header ----- */
+li {
+	display: inline-block;
+}
+
+a {
+	padding: 10px;
+	margin: 10px 0;
+	background-color: rgb(160, 160, 244);
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	background-color: darkblue;
+}
+
+nav a:active {
+	transform: scale(0.9);
+}
+
+.home-nav, .cuisine-nav {
+	color: black;
+} 
+
+/* ----- Main ----- */
+#home-main {
+	grid-area: 2 / 1 / 3 / 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+}
+
+/* --- Intro --- */
+.intro {
+	grid-area: 1 / 1 / 2 / 5;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+h1 {
+	grid-area: 1 / 1 / 2 / 3;
+	font-size: 3rem;
+	padding: 0 15px;
+}
+
+.author {
+	grid-area: 1 / 1 / 2 / 3;
+	font-size: 1.2rem;
+	margin-top: 70px;
+	text-align: center;
+}
+
+.intro-p {
+	grid-area: 2 / 3 / 3 / 5;
+	padding: 25px;
+	margin-left: 30px;
+	line-height: 1.5;
+	max-width: 55ch;
+}
+
+/* --- Featured --- */
+.featured {
+	grid-area: 2 / 1 / 3 / 5;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 100px 1fr 50px;
+	align-items: center;
+	justify-items: center;
+}
+
+h2 {
+	grid-area: 1 / 1 / 2 / 6;
+	font-size: 2.5rem;
+}
+
+.featured div {
+	border-radius: 5px;
+}
+
+/* Actual image goes here */
+.main-img-placeholder {
+	grid-area: 2 / 3 / 3 / 4;
+	margin: 0 15px;
+	width: 300px;
+	height: 300px;
+	background-color: black;
+}
+
+.featured h3 {
+	grid-area: 3 / 1 / 4 / 6;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 15px 0 ;
+}
+
+/* Actual image goes here */
+.left-img-placeholder {
+	grid-area: 2 / 2 / 3 / 3;
+	width: 150px;
+	height: 150px;
+	background-color: grey;
+}
+
+/* Actual image goes here */
+.right-img-placeholder {
+	grid-area: 2 / 4 / 3 / 5;
+	width: 150px;
+	height: 150px;
+	background-color: gray;
+}
+
+.right-button {
+	grid-area: 2 / 5 / 3 / 6;
+	height: 50px;
+}
+
+.left-button {
+	grid-area: 2 / 1 / 3 / 2;
+	height: 50px;
+}
+
+/* --- All Projects --- */
+.all-projects {
+	grid-area: 3 / 1 / 4 / 5;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100px 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+}
+
+all-projects h2 {
+	grid-area: 1 / 1 / 2 / 4;
+}
+
+.project {
+	display: grid;
+	padding: 15px;
+}
+
+.project h3 {
+	text-align: center;
+	margin: 15px 0;
+	font-size: 1.5rem;
+}
+
+.project-3 {
+	grid-area: 3 / 1 / 4 / 2;
+}
+
+.project-4 {
+	grid-area: 3 / 2 / 4 / 3;
+}
+
+.project-placeholder {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+
+/* ------- Wok Asian Cuisine Project Page ------- */
+
+/* ----- Main ----- */
+#cuisine-main {
+	grid-area: 2 / 1 / 3 / 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 100px 1fr 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+}
+
+#cuisine-main h1 {
+	grid-area: 1 / 1 / 2 / 5;
+}
+
+.back-button {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+#cuisine-main section {
+	margin: 30px 0;
+}
+
+.first-group {
+	grid-area: 2 / 1 / 3 / 5;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-self: center;
+}
+
+.second-group {
+	grid-area: 3 / 1 / 4 / 5;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-self: center;
+}
+
+.second-group div {
+	grid-area: 1 / 2 / 2 / 3;
+}
+
+.third-group {
+	grid-area: 4 / 1 / 5 / 5;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-self: center;
+}
+
+.details-img-placeholder {
+	margin: 0 auto;
+	width: 230px;
+	height: 320px;
+	background-color: black;
+}
+
+#cuisine-main section p {
+	max-width: 55ch;
+	line-height: 1.5;
+	padding: 25px;
+}
+
