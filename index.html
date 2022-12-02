@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <title>Ryan Pallas's Portfolio</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="script.js">
+        <script src="script.js"></script>
         <!-- TODO: Create favicon -->
     </head>
     <body id="home-page">
@@ -17,9 +17,9 @@
             <nav>
                 <ul>
                     <li><a class="home-nav" href="index.html">Home</a></li>
-                    <li><a href="project-1.html">Wok Asian Cuisine</a></li>
-                    <li><a href="#">Project 2</a></li>
-                    <li><a href="#">Project 3</a></li>
+                    <li><a href="cuisine-project.html">Wok Asian Cuisine</a></li>
+                    <li><a href="pallas-creations-project.html">Pallas Creations</a></li>
+                    <li><a href="loading-bar-project.html">Loading Bar Animation</a></li>
                     <li><a href="#">Project 4</a></li>
                 </ul>
             </nav>
@@ -27,51 +27,50 @@
         <main id="home-main">
             <section class="intro">
                 <h1>Portfolio</h1>
-                <p class="author">By - Ryan Pallas</p>
-                <p class="intro-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi quis hendrerit dolor magna eget est. Nisi quis eleifend quam adipiscing vitae proin. Facilisis leo vel fringilla est ullamcorper. Mattis nunc sed blandit libero volutpat sed cras. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est.</p>
+                <p class="author">- Ryan Pallas</p>
+                <p class="intro-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi quis hendrerit dolor magna eget est. Nisi quis eleifend quam adipiscing vitae proin. Facilisis leo vel fringilla est ullamcorper. Mattis nunc sed blandit libero volutpat sed cras. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi quis hendrerit dolor magna eget est. Nisi quis eleifend quam adipiscing vitae proin. Facilisis leo vel fringilla est ullamcorper. Mattis nunc sed blandit libero volutpat sed cras. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est.</p>
             </section>
             <section class="featured">
                 <h2>Featured</h2>
-                <!-- <section class="featured-images"> -->
-                    <!-- <div class="main-img"> -->
-                        <div class="main-img-placeholder"></div>
-                        <!-- <img src="" alt=""> -->
+                    <a class="project-link" id="main-img" href="cuisine-project.html">
+                        <img class="main-img-placeholder" src="images/wok-asian-cuisine-screenshot.png" alt="screenshot of home page of Wok Asian Cuisine webiste">
+                    </a>
+                    <a class="project-link" id="main-img-title" href="cuisine-project.html">
                         <h3>Wok Asian Cuisine</h3>
-                    <!-- </div> -->
-                    <!-- <div class="left-img"> -->
-                        <div class="left-img-placeholder"></div>
-                        <!-- <img src="" alt=""> -->
-                    <!-- </div> -->
-                    <!-- <div class="right-img"> -->
-                        <div class="right-img-placeholder"></div>
-                        <!-- <img src="" alt=""> -->
-                    <!-- </div> -->
-                <!-- </section> -->
-                <button class="right-button">&gt;</button>
-                <button class="left-button">&lt;</button>
+                    </a>
+                    <img class="left-img-placeholder" id="left-img" src="images/pallas-creations-screenshot.png" alt="">
+                    <img class="right-img-placeholder" id="right-img" src="images/pallas-creations-screenshot.png" alt="">
+                <button id="right-button">&gt;</button>
+                <button id="left-button">&lt;</button>
             </section>
             <section class="all-projects">
                 <h2>All projects</h2>
-                <div class="project project-1">
-                    <div class="project-placeholder"></div>
-                    <!-- <img src="" alt=""> -->
-                    <h3>Wok Asian Cuisine</h3>
-                </div>
-                <div class="project project-2">
-                    <div class="project-placeholder"></div>
-                    <!-- <img src="" alt=""> -->
-                    <h3>Wok Asian Cuisine</h3>
-                </div>
-                <div class="project project-3">
-                    <div class="project-placeholder"></div>
-                    <!-- <img src="" alt=""> -->
-                    <h3>Project 3</h3>
-                </div>
-                <div class="project project-4">
-                    <div class="project-placeholder"></div>
-                    <!-- <img src="" alt=""> -->
-                    <h3>Project 4</h3>
-                </div>
+                <a class=" project-1 project-link" href="cuisine-project.html">
+                    <div class="project">
+                        <img src="images/wok-asian-cuisine-screenshot.png" alt="">
+                        <h3>Wok Asian Cuisine</h3>
+                    </div>
+                </a>
+                <a class=" project-2 project-link" href="pallas-creations-project.html">
+                    <div class="project">
+                        <img src="images/pallas-creations-screenshot.png" alt="">
+                        <h3>Pallas Creations</h3>
+                    </div>
+                </a>
+                <a class="project-3 project-link" href="loading-bar-project.html">
+                    <div class="project ">
+                        <div class="project-placeholder"></div>
+                        <!-- <img src="" alt=""> -->
+                        <h3>Loading Bar Animation</h3>
+                    </div>
+                </a>
+                <a class="project-4 project-link" href="#">
+                    <div class="project ">
+                        <div class="project-placeholder"></div>
+                        <!-- <img src="" alt=""> -->
+                        <h3>Project 4</h3>
+                    </div>
+                </a>
             </section>
         </main>
     </body>
